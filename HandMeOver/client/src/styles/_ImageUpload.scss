@@ -1,0 +1,23 @@
+@import '_variables.scss';
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.image-field {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    border-top: 2px solid $image-color;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.521);
+    
+
+
+    .input {
+        margin: 0px;
+        padding: 10px 0px;
+    }
+}

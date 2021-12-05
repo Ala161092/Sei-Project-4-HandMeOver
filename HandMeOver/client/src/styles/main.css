@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-title {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 40px;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  margin-top: 150px;
+  max-width: 480px;
+  max-height: 800px;
+}
+.form-wrapper .form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.form-wrapper input {
+  padding: 12px 40px 8px 12px;
+}
+.form-wrapper .submit {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 15px;
+}
+.form-wrapper .pass-valid {
+  color: rgba(184, 184, 184, 0.863);
+}
+
+.offcanvasNav {
+  background-color: black;
+}
+
+.eom-offcanvas.active {
+  background-color: black;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.image-field {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  border-top: 2px solid rgba(184, 184, 184, 0.863);
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.521);
+}
+.image-field .input {
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer-container {
+  width: 100%;
+  color: rgba(122, 121, 121, 0.932);
+  background-color: #b8b8b854;
+  position: fixed;
+  bottom: 0%;
+  padding: 30px;
+}
+.footer-container .social-links {
+  display: flex;
+  gap: 20px;
+}
+.footer-container .black {
+  color: black;
+}
+.footer-container .logo-footer {
+  position: fixed;
+  right: 0%;
+  padding-right: 30px;
+}
+
+.full-width {
+  width: 1000px;
+}
+
+.widthpic {
+  width: 1000px;
+  height: 500px;
+}
+
+.heading {
+  width: 900px;
+}
+
+/*# sourceMappingURL=main.css.map */

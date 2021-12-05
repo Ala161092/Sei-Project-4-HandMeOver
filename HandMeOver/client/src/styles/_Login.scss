@@ -1,0 +1,42 @@
+@import '_variables.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.form-title {
+    font-family: $font-stack;
+    margin-bottom: 40px;
+}
+
+
+.form-wrapper {
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 480px;
+    max-height: 800px;
+   
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    input {
+        padding: 12px 40px 8px 12px;
+    }
+
+    .submit {
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        border: none;
+        padding: 15px;
+    }
+
+    .pass-valid {
+        color: rgba(184, 184, 184, 0.863);
+    }
+}

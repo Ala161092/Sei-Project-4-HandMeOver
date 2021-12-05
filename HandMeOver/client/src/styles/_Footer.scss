@@ -1,0 +1,34 @@
+@import '_variables.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.footer-container {
+    width: 100%;
+    color:$footer-color;
+    background-color:#b8b8b854;
+    position: fixed;
+    bottom: 0%;
+    padding: 30px;
+
+
+    .social-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .black {
+        color: black;
+    }
+
+    
+
+    .logo-footer {
+        position: fixed;
+        right: 0%;
+        padding-right: 30px;
+    }
+
+    
+}

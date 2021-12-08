@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { ImageUploadFile } from '../components/imageUploadField'
-import Menu from '../components/nav'
+
 
 const Register = () => {
   const [error, setError] = useState('')
@@ -47,7 +47,7 @@ const Register = () => {
   }
 
   const handleImageUrl = (url) => {
-    setFormData({ ...formData, profileImage: url })
+    setFormData({ ...formData, profile_image: url })
   }
 
   const handleSuccessfulRegister = () => {
@@ -58,7 +58,6 @@ const Register = () => {
   console.log(formData)
   return (
     <div>
-      <Menu />
       <div className='form-wrapper'>
         <h2 className='form-title'>Register</h2>
         <form className='form' onSubmit={handleSubmit}>

@@ -9,7 +9,7 @@ class User(AbstractUser):
     first_name = models.CharField(max_length=75)
     last_name = models.CharField(max_length=75)
     profile_image = models.CharField(max_length=300)
-    wishlist = models.ManyToManyField("product.Product", blank=True)
+    wishlist = models.ManyToManyField("product.Product", related_name='users', blank=True)
    
 
 

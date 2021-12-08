@@ -72,10 +72,10 @@ class Product(models.Model):
         default=New,
     )
     price = models.DecimalField(decimal_places=2, max_digits=7)
-    image = models.CharField(max_length=50)
-    image_2 = models.CharField(max_length=50)
-    image_3 = models.CharField(max_length=50)
-    owner = models.ManyToManyField(User, blank=True)
+    image = models.CharField(max_length=300)
+    image2 = models.CharField(max_length=300)
+    image3 = models.CharField(max_length=300)
+    owner = models.ForeignKey("jwt_auth.User", related_name="product", on_delete=models.CASCADE )
 
 
     def __str__(self):

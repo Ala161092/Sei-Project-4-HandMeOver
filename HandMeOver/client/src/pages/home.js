@@ -1,7 +1,6 @@
 import React from 'react'
 import HomeSlider from '../components/homeSlider'
-import Menu from '../components/nav'
-import Ala from '../components/footer'
+
 
 
 const Home = () => {
@@ -12,8 +11,6 @@ const Home = () => {
       </div>
       <div>
         <HomeSlider />
-        <Menu />
-        <Ala /> 
       </div>
     </div>
   )

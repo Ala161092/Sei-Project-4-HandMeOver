@@ -7,5 +7,5 @@ class UsersOnlySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('first_name','last_name','profile_image')
+        fields = ('first_name','last_name','profile_image', 'wishlist')
 

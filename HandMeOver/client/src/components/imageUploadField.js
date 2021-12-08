@@ -18,12 +18,12 @@ export const ImageUploadFile = ({ handleImageUrl, value }) => {
   return (
     <>
       {value ? (
-        <div>
+        <div className='image-field'>
           <img src={value} alt='Profile Image' />
         </div>
       ) : (
         <div className='image-field'>
-          <label>Profile Image</label>
+          <label>Image</label>
           <input className='input' type='file' onChange={handleUpload} />
         </div>
       )}

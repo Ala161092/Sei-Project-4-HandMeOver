@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import Menu from '../components/nav.js'
 
 
 const Login = () => {
@@ -27,6 +26,7 @@ const Login = () => {
       console.log(err)
       setError('Please check email or password.')
     }
+   
   }
 
   const handleChange = (event) => {
@@ -42,7 +42,6 @@ const Login = () => {
 
   return (
     <div>
-      <Menu />
       <div className='form-wrapper'>
         <h2 className='form-title'>Sign In</h2>
         <form className='form'onSubmit={handleSubmit}>
@@ -65,6 +64,7 @@ const Login = () => {
         <p>{error}</p>
       </div>
     </div>
+    
   )
 }
 

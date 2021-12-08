@@ -8,3 +8,12 @@
     background-color: black;
     color: white;
 }
+
+
+.eom-offcanvas .eom-menu-wrap .eom-menu-item:after {
+    border-bottom: 5px solid #e9c7088f !important;
+}
+
+.eom-offcanvas .eom-hamburger-wrap .eom-hamburger:after {
+    color: #e9c7088f !important;
+}

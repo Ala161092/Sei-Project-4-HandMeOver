@@ -7,6 +7,8 @@ from rest_framework.exceptions import PermissionDenied
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
+
+from .userserializer import UsersOnlySerializer
 from .serializers import PopulatedUserSerializer, UserSerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
@@ -46,8 +48,17 @@ class LoginView(APIView):
 class ProfileView(APIView):
     permission_classes = (IsAuthenticated,)
 
-    def get(self, request, pk):
-        profile = User.objects.get(id=pk)
+    def get(self, request):
+        profile = User.objects.get(pk=request.user.id)
         serialized_profile = PopulatedUserSerializer(profile)
         return Response(serialized_profile.data, status=status.HTTP_200_OK)
+    
 
+    def put(self, request):
+        profile = User.objects.get(pk=request.user.id)
+        updated_profile = UsersOnlySerializer(profile, data=request.data, partial=True)
+        if updated_profile.is_valid():
+            updated_profile.save()
+            return Response(updated_profile.data, status=status.HTTP_202_ACCEPTED)
+        else:
+            return Response(updated_profile.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)

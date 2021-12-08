@@ -27,9 +27,10 @@ class ProductListView(APIView):
         return Response(serialized_products.data, status=status.HTTP_200_OK)
 
     def post(self, request):
+        request.data["owner"] = request.user.id
         product = ProductSerializer(data=request.data, partial=True)
         if product.is_valid():
-            product.save(owners=[request.user])
+            product.save()
             return Response(product.data, status=status.HTTP_201_CREATED)
         else:
             return Response(product.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)

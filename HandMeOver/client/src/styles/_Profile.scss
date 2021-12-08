@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.profile-wrapper {
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 1200px;
+
+    .profile-card {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    img {
+        width: 200px
+    }
+    .wishlist-container {
+        display: flex;
+    }
+   
+}

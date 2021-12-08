@@ -1,72 +1,122 @@
 [
 {
   "model": "product.product",
-  "pk": 2,
+  "pk": 1,
   "fields": {
     "name": "1990s diamond-quilted shoulder bag",
     "brand": "Chanel",
-    "description": "Boasting the signature diamond quilting introduced by Gabrielle Chanel in 1955, this burgundy shoulder bag from Chanel is crafted from soft lambskin. With a single flap closure, the piece features the acclaimed interlocking CC turn-lock fastening in polished gold-tone hardware.\r\nThe bag is in great condition!\r\nPlease find me a loving home!",
+    "description": "Boasting the signature diamond quilting introduced by Gabrielle Chanel in 1955, this burgundy shoulder bag from Chanel is crafted from soft lambskin. With a single flap closure, the piece features the acclaimed interlocking CC turn-lock fastening in polished gold-tone hardware.\\r\\nThe bag is in great condition!\\r\\nPlease find me a loving home!",
     "condition": "Fair",
     "price": "980.00",
     "image": "https://i.imgur.com/emnEldS.png",
-    "image_2": "https://i.imgur.com/07DoHFr.png",
-    "image_3": "https://i.imgur.com/MZtDC9H.png"
+    "image2": "https://i.imgur.com/07DoHFr.png",
+    "image3": "https://i.imgur.com/MZtDC9H.png",
+    "owner": 1
+  }
+},
+{
+  "model": "product.product",
+  "pk": 2,
+  "fields": {
+    "name": "1995 Paris limited edition Double Flap shoulder bag",
+    "brand": "Chanel",
+    "description": "A timeless design from the Maison, the Double Flap shoulder bag from Chanel Pre-Owned is the pinnacle of sophistication. Presented in a Paris limited edition, it's expertly crafted from white diamond-quilted lambskin and finished with refined gold-tone hardware.\\r\\nNever worn before!\\r\\nPlease find me a loving home!",
+    "condition": "New",
+    "price": "3823.00",
+    "image": "https://i.imgur.com/NXkfsvQ.png",
+    "image2": "https://i.imgur.com/kPEOaRu.png",
+    "image3": "https://i.imgur.com/YPuCNgn.png",
+    "owner": 1
   }
 },
 {
   "model": "product.product",
   "pk": 3,
   "fields": {
-    "name": "1995 Paris limited edition Double Flap shoulder bag",
-    "brand": "Chanel",
-    "description": "A timeless design from the Maison, the Double Flap shoulder bag from Chanel Pre-Owned is the pinnacle of sophistication. Presented in a Paris limited edition, it's expertly crafted from white diamond-quilted lambskin and finished with refined gold-tone hardware.\r\nNever worn before!\r\nPlease find me a loving home!",
-    "condition": "New",
-    "price": "3823.00",
-    "image": "https://i.imgur.com/NXkfsvQ.png",
-    "image_2": "https://i.imgur.com/kPEOaRu.png",
-    "image_3": "https://i.imgur.com/YPuCNgn.png"
+    "name": "GG Marmont crossbody bag",
+    "brand": "Gucci",
+    "description": "The interlocking 'GG' hardware on Gucci's bag is inspired by a '70s belt buckle from the brand's archives. This quilted leather style has a suede-lined interior spacious enough to carry a compact, wallet and keys. Wear yours cross-body by the chain-trimmed shoulder strap.\\r\\nI have some slight damage, but nothing that can't be fixed.\\r\\nPlease find me a loving home!",
+    "condition": "Fair",
+    "price": "765.00",
+    "image": "https://i.imgur.com/qHjcYfP.png",
+    "image2": "https://i.imgur.com/Q7ORzG8.png",
+    "image3": "https://i.imgur.com/eAQLkqx.png",
+    "owner": 1
   }
 },
 {
   "model": "product.product",
   "pk": 4,
   "fields": {
-    "name": "GG Marmont crossbody bag",
+    "name": "GG Marmont super mini quilted leather shoulder bag",
     "brand": "Gucci",
-    "description": "The interlocking 'GG' hardware on Gucci's bag is inspired by a '70s belt buckle from the brand's archives. This quilted leather style has a suede-lined interior spacious enough to carry a compact, wallet and keys. Wear yours cross-body by the chain-trimmed shoulder strap.\r\nI have some slight damage, but nothing that can't be fixed.\r\nPlease find me a loving home!",
-    "condition": "Fair",
-    "price": "765.00",
-    "image": "https://i.imgur.com/qHjcYfP.png",
-    "image_2": "https://i.imgur.com/Q7ORzG8.png",
-    "image_3": "https://i.imgur.com/eAQLkqx.png"
+    "description": "Gucci's archives contain some truly iconic bags, including the 'Soho Disco', 'Dionysus' and 'GG Marmont'. This super mini version of the latter has been made in Italy from soft quilted leather and detailed with a burnished plaque. It's perfect for occasions when all you need to carry is a lipstick and cardholder.\\r\\nPlease find me a loving home!",
+    "condition": "Tlc",
+    "price": "500.00",
+    "image": "https://i.imgur.com/lsrzf1c.png",
+    "image2": "https://i.imgur.com/Adc1mJz.png",
+    "image3": "https://i.imgur.com/QwhMDOt.png",
+    "owner": 1
   }
 },
 {
   "model": "product.product",
   "pk": 5,
   "fields": {
-    "name": "GG Marmont super mini quilted leather shoulder bag",
-    "brand": "Gucci",
-    "description": "Gucci's archives contain some truly iconic bags, including the 'Soho Disco', 'Dionysus' and 'GG Marmont'. This super mini version of the latter has been made in Italy from soft quilted leather and detailed with a burnished plaque. It's perfect for occasions when all you need to carry is a lipstick and cardholder.\r\nPlease find me a loving home!",
-    "condition": "Tlc",
-    "price": "500.00",
-    "image": "https://i.imgur.com/lsrzf1c.png",
-    "image_2": "https://i.imgur.com/Adc1mJz.png",
-    "image_3": "https://i.imgur.com/QwhMDOt.png"
+    "name": "Jodie mini knotted intrecciato leather tote",
+    "brand": "Bottega Veneta",
+    "description": "The signature intrecciato weave remains one of Bottega Veneta's most long-standing house codes - it's refined, elegant and instantly recognizable to those in the know. Made in Italy under Daniel Lee's creative direction, this 'Jodie' tote is masterfully assembled from strips of supple leather and has a softly rounded shape. The top handle is artfully knotted at one side.",
+    "condition": "New",
+    "price": "1800.00",
+    "image": "",
+    "image2": "",
+    "image3": "",
+    "owner": 1
   }
 },
 {
   "model": "product.product",
-  "pk": 6,
+  "pk": 10,
   "fields": {
-    "name": "testingggg-update",
-    "brand": "Chanel",
-    "description": "A timeless design from the Maison, the Double Flap shoulder bag from Chanel Pre-Owned is the pinnacle of sophistication. Presented in a Paris limited edition, it's expertly crafted from white diamond-quilted lambskin and finished with refined gold-tone hardware.\r\nNever worn before!\r\nPlease find me a loving home!",
+    "name": "testing",
+    "brand": "Balmain",
+    "description": "gdg",
+    "condition": "Fair",
+    "price": "1.00",
+    "image": "http://res.cloudinary.com/dmbnpx1fy/image/upload/v1638808540/testing/ssxqyotmwmsphqxlumqd.png",
+    "image2": "",
+    "image3": "",
+    "owner": 2
+  }
+},
+{
+  "model": "product.product",
+  "pk": 11,
+  "fields": {
+    "name": "testing",
+    "brand": "Dior",
+    "description": "gdg",
     "condition": "New",
-    "price": "3823.00",
+    "price": "900.00",
+    "image": "http://res.cloudinary.com/dmbnpx1fy/image/upload/v1638819483/testing/sdg1pqct5dhrzgilec26.png",
+    "image2": "",
+    "image3": "",
+    "owner": 1
+  }
+},
+{
+  "model": "product.product",
+  "pk": 12,
+  "fields": {
+    "name": "Jodie mini knotted intrecciato leather tote",
+    "brand": "Bottega Veneta",
+    "description": "The signature intrecciato weave remains one of Bottega Veneta's most long-standing house codes - it's refined, elegant and instantly recognizable to those in the know. Made in Italy under Daniel Lee's creative direction, this 'Jodie' tote is masterfully assembled from strips of supple leather and has a softly rounded shape. The top handle is artfully knotted at one side.",
+    "condition": "New",
+    "price": "1800.00",
     "image": "",
-    "image_2": "",
-    "image_3": ""
+    "image2": "",
+    "image3": "",
+    "owner": 1
   }
 }
 ]

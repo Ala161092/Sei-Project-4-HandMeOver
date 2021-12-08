@@ -29,7 +29,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password', 'password_confirmation', 'wishlist')
+        fields = ('username', 'first_name', 'last_name', 'profile_image', 'email', 'password', 'password_confirmation', 'wishlist')
 
 class PopulatedUserSerializer(UserSerializer):
     wishlist = ProductSerializer(many=True)

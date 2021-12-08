@@ -18,10 +18,11 @@ const ProductsList = () => {
     }
     getProducts()
   }, [])
-
+  
+  console.log('productsssss--->>>', products)
   return (
-    <div>
-      <div>
+    <div className='products-wrapper'>
+      <div className='product-wrapper'>
         {products.map((product) => (
           <div key={product.id}>
             <ProductCard {...product} />

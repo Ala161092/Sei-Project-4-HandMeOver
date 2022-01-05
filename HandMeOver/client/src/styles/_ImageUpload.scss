@@ -1,15 +1,8 @@
-@import '_variables.scss';
-
-
-
-* {
-    box-sizing: border-box;
-}
 
 .image-field {
     display: flex;
-    flex-direction: column;
-    max-width: 480px;
+    flex-direction: row;
+    width: 180x;
     border-top: 2px solid $image-color;
     padding-top: 20px;
     color: rgba(0, 0, 0, 0.521);

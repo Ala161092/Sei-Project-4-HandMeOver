@@ -7,7 +7,7 @@ function Header() {
       <div className='header-container'>
         <h1>Hand-Me-Over</h1>
         <Link className='log-out' to='/' onClick={logOut}>
-          Log-Out
+          Sign Out
         </Link>
       </div>
     </div>

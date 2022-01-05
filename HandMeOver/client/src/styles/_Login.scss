@@ -1,13 +1,8 @@
 @import '_variables.scss';
 
 
-* {
-    box-sizing: border-box;
-}
-
-
 .form-title {
-    font-family: $font-stack;
+   
     margin-bottom: 40px;
 }
 
@@ -17,15 +12,17 @@
     margin-top: 150px;
     max-width: 480px;
     max-height: 800px;
+
    
     .form {
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-
+    
     input {
         padding: 12px 40px 8px 12px;
+        //border: none;
     }
 
     .submit {

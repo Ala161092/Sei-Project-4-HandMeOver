@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductsCard'
 import { getSingleUser } from '../helpers/api'
+import { isAuthenticated } from '../helpers/auth'
 // import { getToken } from '../helpers/auth'
 
 const Profile = () => {
@@ -13,17 +14,19 @@ const Profile = () => {
     email: '',
     wishlist: [],
   })
+  const isLoggedIn = isAuthenticated()
 
   useEffect(() => {
     getSingleUser().then(setUser)
   }, [])
+
 
   return (
     <div className='profile-wrapper'>
       <div>
         <h1 className='form-title'>Your Account</h1>
       </div>
-      {user ? (
+      {isLoggedIn ? (
         <div>
           <div className='profile-card'>
             <img src={user.profile_image} />
@@ -40,9 +43,9 @@ const Profile = () => {
         </div>
       ) : (
         <div>
-          <Link to='/register'></Link>
-          or
-          <Link to='/signin'></Link>
+          <p>You are not Logged in! Please Sign In if you have an account or Register now.</p>
+          <Link className='login-cta' to='/login'>Sign In</Link>
+          <Link className='register-cta' to='/register'>Register</Link>
         </div>
       )}
     </div>

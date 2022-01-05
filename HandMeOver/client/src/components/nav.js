@@ -15,12 +15,11 @@ function Menu({ location }) {
         { text: 'Sign In', link: '/login' },
         { text: 'Home', link: '/' },
         { text: 'Bags', link: '/bags' },
-        { text: 'About', link: '/' },
-        { text: 'Sell A Bag', link: '/sellbag' },
         { text: 'My Profile', link: '/profile' },
-        { text: 'Cart', link: '/mycart' }
+        { text: 'Cart', link: '/mycart' },
+        { text: 'About', link: '/about' }
       ]}
-      header={<h1>HandMeOver</h1>}
+      // header={<h1>HandMeOver</h1>}
       footer={
         <div className='social-links'>
           <Link to='/'><IoLogoFacebook className='facebook black'/></Link>

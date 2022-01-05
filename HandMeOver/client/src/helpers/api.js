@@ -1,12 +1,8 @@
 import axios from 'axios'
 
 export const getSingleProduct = async (id) => {
-  const token = localStorage.getItem('token')
-
   try {
-    const { data } = await axios.get(`/api/products/${id}`, {
-      headers: { Authorization: `Bearer ${token}` },
-    })
+    const { data } = await axios.get(`/api/products/${id}`)
     console.log(data)
     return data
   } catch (err) {
@@ -39,3 +35,32 @@ export const getItems  = async () => {
     
   }
 }
+
+
+// useEffect(() => {
+//   const getProducts = async () => {
+//     try {
+//       const response = await axios.get('api/products/')
+//       console.log(response.data)
+//       setProducts(response.data)
+
+//     } catch (err) {
+//       console.log(err)
+//     }
+//   }
+//   getProducts()
+// }, [])
+
+
+export const getProducts = async () => {
+  try {
+    const { data } = await axios.get('api/products/')
+    console.log(data)
+    return data
+    
+  } catch (err) {
+    console.log(err)
+    
+  }
+}
+

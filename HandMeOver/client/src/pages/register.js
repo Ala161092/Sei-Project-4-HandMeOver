@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import { ImageUploadFile } from '../components/imageUploadField'
+import { ImageUploadFile } from '../components/ImageUploadField'
 
 
 const Register = () => {

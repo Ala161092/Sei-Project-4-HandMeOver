@@ -11,9 +11,18 @@
 
 
 .eom-offcanvas .eom-menu-wrap .eom-menu-item:after {
-    border-bottom: 5px solid #e9c7088f !important;
+    border-bottom: 5px solid #ffff;
 }
 
-.eom-offcanvas .eom-hamburger-wrap .eom-hamburger:after {
-    color: #e9c7088f !important;
+
+.social-links {
+    
+    a {
+        font-size: 20px;
+        margin-right: 20px;
+        color: white;
+    }
 }
+
+
+

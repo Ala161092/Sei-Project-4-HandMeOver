@@ -1,0 +1,43 @@
+//Cart Styling
+
+.shopping-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding: 20px 20px;
+    
+
+
+    .shopping-header {
+        border-bottom: 2px solid rgb(209, 206, 206);
+        padding-bottom: 20px;
+        width: 70%;
+    }
+
+
+    img {
+        width: 300px;
+    }
+
+    .delete-button {
+        position: fixed;
+        display: inline;
+        width: 175px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 576px)  {
+    .shopping-wrapper {
+        max-width: 370px;
+        width: 100%;
+        text-align: center;
+       
+
+
+        .delete-button {
+            position: relative;
+        }
+    }
+}

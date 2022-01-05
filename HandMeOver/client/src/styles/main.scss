@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 @import 'Login';
 @import 'Nav';
 @import 'ImageUpload';
@@ -5,6 +6,23 @@
 @import 'Products';
 @import 'Profile';
 @import 'Header';
+@import 'ProductAdd';
+@import 'Home';
+@import 'Cart';
+@import 'About';
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+h2 {
+    font-size: 35px;
+}
+
 
 .full-width {
     width:1000px;
@@ -19,4 +37,6 @@
 .heading {
     width: 900px;
 }
+
+
 

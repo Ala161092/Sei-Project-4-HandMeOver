@@ -16,12 +16,16 @@ export const getPayload = () => {
   const token = getToken()
   if (!token) return false
   const split = token.split('.')
+  console.log('spliitt--->', split)
   return JSON.parse(atob(split[1]))
   
 }
 
-export function isLoggedIn () {
-  return getToken()
+export function isAuthenticated() {
+  const payload = getPayload()
+  console.log('payload--->', payload)
+  if (!payload) return false
+  return true
 }
 
 function headers() {
@@ -42,4 +46,12 @@ export const logOut = () => {
 
 export function addCartItem(product) {
   return  axios.post('/api/cart/', product, headers())
+}
+
+export function deleteBasketItem(id) {
+  return axios.delete(`/api/cart/${id}/`, headers())
+}
+
+export function getCartItems() {
+  return axios.get('/api/cart', headers())
 }

@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const ProductCard = ({ brand, image, name, price }) => {
+const ProductCard = ({ id, brand, image, name, price }) => {
   // const navigate = useNavigate()
 
   return (
     <div className='product'>
-      <h3>{name}</h3>
-      <h4>{brand}</h4>
       <img src={image}></img>
-      <p>{price}</p>
+      <h4 className='brand-name'>{brand}</h4>
+      <Link className='product-description' to={`/bags/${id}`}>{name}</Link>
+      <p className='product-price'>£ {price}</p>
     </div>
   )
 }

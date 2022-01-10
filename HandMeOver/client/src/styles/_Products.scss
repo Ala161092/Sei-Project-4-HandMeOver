@@ -268,7 +268,7 @@ p:first-child {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 576px)  {
     .single-product-wrapper {
         max-width: 370px;
 
@@ -280,8 +280,9 @@ p:first-child {
     .swiper-container  {
         width: 100%;
     }
+    
     .swiper-wrapper {
-        display: block;
+        //display: block;
         flex-direction: row;
     }
 

@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const getSingleProduct = async (id) => {
   try {
-    const { data } = await axios.get(`/api/products/${id}`)
+    const { data } = await axios.get(`/api/products/${id}/`)
     console.log(data)
     return data
   } catch (err) {
@@ -13,7 +13,7 @@ export const getSingleProduct = async (id) => {
 export const getSingleUser = async () => {
   const token = localStorage.getItem('token')
   try {
-    const { data } = await axios.get('/api/auth/profile', {
+    const { data } = await axios.get('/api/auth/profile/', {
       headers: { Authorization: `Bearer ${token}` },
     })
     return data
@@ -26,7 +26,7 @@ export const getSingleUser = async () => {
 export const getItems  = async () => {
   const token = localStorage.getItem('token')
   try {
-    const { data } = await axios.get('/api/cart', {
+    const { data } = await axios.get('/api/cart/', {
       headers: { Authorization: `Bearer ${token}` },
     })
     return data

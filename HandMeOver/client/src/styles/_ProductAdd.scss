@@ -20,18 +20,27 @@
         height: 300px;
     }
 
-   label {
-       font-weight: bolder;
-   }
+    label {
+        font-weight: bolder;
+    }
 
 
-   .radio {
-       display: flex;
-   }
+    .radio {
+        display: flex;
+    }
 }
+
 .ui button input {
     width: 30px;
     background-color: grey;
     border: 0px;
 }
 
+
+@media (max-width: 576px)   {
+    .content .description {
+        width: 310px;
+        height: 192px;
+    }
+
+}

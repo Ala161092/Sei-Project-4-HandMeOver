@@ -327,7 +327,6 @@ p:first-child {
   }
 
   .swiper-wrapper {
-    display: block;
     flex-direction: row;
   }
 
@@ -507,6 +506,12 @@ a.login-cta, .register-cta {
   border: 0px;
 }
 
+@media (max-width: 576px) {
+  .content .description {
+    width: 310px;
+    height: 192px;
+  }
+}
 h1 {
   font-size: 80px;
 }

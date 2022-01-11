@@ -53,5 +53,5 @@ export function deleteBasketItem(id) {
 }
 
 export function getCartItems() {
-  return axios.get('/api/cart', headers())
+  return axios.get('/api/cart/', headers())
 }

@@ -2,71 +2,52 @@
 
 
 
-## Table of contents
-
-- [Overview](overview)
-- [Brief](brief)
-- [Site Preview](Site-Previw)
-- [Deployment](Deployment)
-  - [Link](#link)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Getting Started](#getting-started)
-- [Development](Development)
-  - [Back-End](#back-end)
-  - [Front-End](#front-end)
-- [Challenges](Challenges)
-- [Wins & Key Learnings](Wins-&-Key-Learnings)
-- [Future Improvements](Future-Improvements)
-
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
+# Overview
 
 This was my final project during the General Assembly, Software Engineering Immersive Course. 
 To ensure that I had truly cemented all the learning over the past few months, I decided to make this a solo project. 
 HandMeOver is a luxury ecommerce site, where users are able to purchase handbags, read reviews and sell their own handbag.
 
-![Screenshot 2022-01-31 at 20-51-42 HandMeOver](https://user-images.githubusercontent.com/77459312/151871215-768f00f6-6c84-40a4-b00c-fa40a8d8aba5.png)
 
-## Brief
+# Brief
 We were given 8 days to build a full stack application that was built using a Django & Python back-end with a React front-end.
 
-## Site Preview
+# Site Preview
+
+![Screenshot 2022-01-31 at 20-51-42 HandMeOver](https://user-images.githubusercontent.com/77459312/151871215-768f00f6-6c84-40a4-b00c-fa40a8d8aba5.png)
 
 
-## Deployment
+# Deployment
 
 HandMeOver can be found here. To gain full access to the site and to be able to add products into the cart - 
 please use the login details :
 username: ala@email.com 
 pass: nader123
 
-### Link
+## Link
 
 - Live Site URL: (https://handmeover.herokuapp.com/)
 
-## My process
+# My process
 
-### Built with
+## Built with
 
-Front-End:
+#### Front-End:
 - JavaScript(ES6)
 - React.js 
 - HTML5
 - CSS3 + SASS
 
-Back-End:
+#### Back-End:
 - Django 
 - Python
 - PostgreSQL
 - Node.js
 
-Dependencies:
+#### Dependencies:
 - Cloudinary
 
-Dev Tools:
+#### Dev Tools:
 - GitHub
 - Figma
 - Notion
@@ -76,16 +57,16 @@ Dev Tools:
 
 
 
-### Getting Started
+# Getting Started
 Planning has always been one of the main foundations for all my projects. To fully understand and envision the relationships between my models I used an ERD diagram:
 ![ERD](https://user-images.githubusercontent.com/77459312/151815897-e4d5157b-ec96-4790-a9d9-7c25e471473b.jpg)
 
 Below is the wireframe for the design of the application. This was done using Figma and Photoshop. The detailed wireframe ensured that I stayed focused on the design.
 ![Wireframe](https://user-images.githubusercontent.com/77459312/151816381-e509b8c0-2692-4d64-9372-76c2ba8f0991.jpg)
 
-## Development
+# Development
 
-### Back-End
+## Back-End
 Using Django and Python, I spent the next few days creating my models and establishing the different relationships between them including one-to-many and many-to-many. I created 4 models, the Product model as seen below, User model, Review model, and the Checkout model. 
 ```
 from django.db import models
@@ -195,7 +176,7 @@ I was now able to test all the request methods and was able to see whether the c
 ![insomnia](https://user-images.githubusercontent.com/77459312/151817123-9b378c3f-6032-4fd1-9676-c25e9faab976.jpg)
 
 
-### Front-End
+## Front-End
 The remaining four days of the week was spent on developing my front-end, which had been created using React. 
 As this was my third project using React, I wanted to incorporate different features and make use of its many components.
 
@@ -315,15 +296,15 @@ https://user-images.githubusercontent.com/77459312/151874034-15d9714a-3836-4774-
 
 https://user-images.githubusercontent.com/77459312/151874291-ba8ee59c-67dc-4dcd-ab01-2abf2aa05e8c.mov
 
-## Challenges
+# Challenges
   • Incorporating SwiperJs into the project was rather difficult at first. Especially on the individual items page, this was due to the design I had in mind. This meant I had to overwrite some of the pre-built styling. However, I am glad that I took the time out to do so, as the end result looked great.  
   • I found the deployment of this project rather challenging, I had some issues with nested folders causing compatibility conflicts. This has since been resolved with some folders rearrangements. 
 
-## Wins & Key Learnings:
+# Wins & Key Learnings:
   • As we had only spent two weeks learning Django and Python, I was really able to cement that learning with this project. I was able to more so understand JavaScript syntax and really put it to use.   
   • Incorporating features such as Swiper and the React bootstrap offCavans component, gave my project the ultra modern touch. Taking the time out to understand and learn these features means that I will now be able to use them on any future projects.   
 The site is fully responsive, this is something I wanted to ensure I made enough time for during this project. 
 
-## Future Improvments
+# Future Improvments
   • I would like to incorporate a payment method during the checkout process. In particular, the use of Stripe would have worked perfectly with this project.
 
